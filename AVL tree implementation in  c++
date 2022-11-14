@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+int n,i,total,seats[100],ch;
+float amount,price;
+char movie[20];
+printf("\n\t\tMovie ticket booking system\n");
+printf"Enter Movie name:");
+gets(movie);
+printf("Enter number of tickets:");
+scanf("%d",&n);
+if(n>100)
+printf("House full");
+else
+{
+printf("Select 1 for Balcony");
+printf("Select 2 for first class");
+printf("Select 3 for second class");
+printf("Select 4 for third class");
+printf("Enter your choice:");
+scanf("%d",&ch);
+if(ch<1||ch>4)
+printf("Invalid choice!");
+else
+{
+switch(ch)
+{
+case 1:
+amount=120;
+price=120*n;
+break;
+case 2:
+amount=100;
+price=100*n;
+break;
+}
+return 0;
+}
